@@ -1,0 +1,1 @@
+Projeto de adicinar tarefas em c# via console, projeto conta com 4 opções basicas parq eu o usuario consiga se organizar em sua rotina sem precisar de varias agendas ou papeis, programa bem interativo e basico para o usuario
