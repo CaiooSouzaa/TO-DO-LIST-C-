@@ -7,7 +7,7 @@ string status, novaTerefa;
 Console.Write("Deseja nserir algo na sua lista [s/n]: ");
 opcao = char.Parse(Console.ReadLine());
 
-while (opcao =='s')
+while (opcao == 's')
 {
     Console.WriteLine("[1] - Adicionar tarefa");
     Console.WriteLine("[2] - Listar tarefas");
@@ -20,7 +20,7 @@ while (opcao =='s')
     {
         //add tarefa
 
-        Console.WriteLine("Digite a tarefa: ");
+        Console.Write("Digite a tarefa: ");
         novaTerefa = Console.ReadLine();
         tarefa.Add(novaTerefa);
         concluida.Add(false);
@@ -28,7 +28,8 @@ while (opcao =='s')
     }
     else if (opcaoTarefa == 2)
     {
-        Console.WriteLine("Tarefas adicionadas");
+        //Lista tarefas
+        Console.Write("Tarefas adicionadas");
 
         for (int i = 0; i < tarefa.Count; i++)
         {
@@ -38,7 +39,8 @@ while (opcao =='s')
     }
     else if (opcaoTarefa == 3)
     {
-        Console.WriteLine("Tarefas concluidas");
+        //Conclui a tarefa
+        Console.Write("Tarefas concluidas");
 
         indice = int.Parse(Console.ReadLine()) - 1;
 
@@ -54,7 +56,8 @@ while (opcao =='s')
     }
     else if (opcaoTarefa == 4)
     {
-        Console.WriteLine("Remover tarefa");
+        //Remove a tarefa
+        Console.Write("Remover tarefa");
         remover = int.Parse(Console.ReadLine());
         if (remover >= 0 && remover < tarefa.Count)
         {
@@ -72,7 +75,7 @@ while (opcao =='s')
         Console.WriteLine("Saindo");
     }
 
-    Console.WriteLine("Pressione ENTER para continuar...");
+    Console.Write("Pressione ENTER para continuar...");
     Console.ReadLine();
 }
 
